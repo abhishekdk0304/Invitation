@@ -17,17 +17,18 @@
   <!-- Content here -->
 
   <!-- 16:9 aspect ratio -->
+  <a href="https://logwork.com/countdown-yjeo" class="countdown-timer disabled" data-timezone="Asia/Kolkata" data-date="2023-04-16 12:00" disabled> Timer on</a>
 
-
+  <video autoplay muted loop id="myVideo" style="height: 200%;width: 99%;">
+    <source src="./images/5.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
   <video autoplay muted loop id="myVideo" style="height: 200%;width: 99%;">
     <source src="./images/3.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
   </video>
 
-    <img src="./images/2.png" class="img-fluid" alt="Responsive image" style="height: 200%;width: 99%;">
-
-    <a href="https://logwork.com/countdown-yjeo" class="countdown-timer" data-timezone="Asia/Kolkata" data-date="2023-04-16 12:00">Countdown Timer</a>
-
+    
 </div>
 
     <!-- Optional JavaScript -->
@@ -44,6 +45,11 @@
         font-family:Arial, Helvetica, sans-serif;
     letter-spacing: 0em;
     }
+
+    a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
 
     body {
   background-image: url('./images/BG.png');
